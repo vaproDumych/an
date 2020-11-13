@@ -1,0 +1,57 @@
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/tree_bg.jpg');
+  background-size: cover;
+}
+ 
+section::after {
+  background: url('img/big_grass.png') repeat-x center bottom;
+  height: 100%;
+  width: 100%;;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cloud_1 img {
+  height: 10vh;
+  content: "";
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.cloud_2 img {
+  height: 30vh;
+  content: "";
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  z-index: 1;
+}
+
+.tree {
+  height: 100vh;
+}
+
+.tree img {
+  display: block;
+  margin: 0 auto;
+  padding: 3vh;
+  height: 80vh;
+}
+
+.tree::after {
+  background: url('img/grass.png') no-repeat center bottom;
+  width: 500px;
+  height: 150px;
+  content: "";
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
